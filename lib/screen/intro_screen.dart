@@ -77,9 +77,28 @@ class IntroScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 30),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: buildIndicators(),
                   ),
                 ],
+              ),
+            ),
+          ),
+
+          // bottom button
+          Positioned(
+            bottom: 30,
+            right: 20,
+            left: 20,
+            child: SizedBox(
+              height: 60,
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: kBackgroundColor,
+                  foregroundColor: Colors.white,
+                ),
+                child: const Text('Sign Up with Email'),
               ),
             ),
           ),
