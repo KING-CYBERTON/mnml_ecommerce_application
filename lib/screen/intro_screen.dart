@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:mnml_ecommerce_application/screen/home_screen.dart';
 import 'package:mnml_ecommerce_application/util/colors.dart';
 import 'package:mnml_ecommerce_application/util/utils.dart';
 import 'package:mnml_ecommerce_application/widget/image_list_view.dart';
@@ -100,7 +102,12 @@ class IntroScreen extends StatelessWidget {
               child: SizedBox(
                 height: 60,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () => Navigator.push(
+                    context,
+                    CupertinoPageRoute(
+                      builder: (context) => const HomeScreen(),
+                    ),
+                  ),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: kBackgroundColor,
                     foregroundColor: Colors.white,
