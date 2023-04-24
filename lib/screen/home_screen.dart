@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mnml_ecommerce_application/screen/category_display_screen.dart';
+import 'package:mnml_ecommerce_application/screen/product_display_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -24,7 +26,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   currentIndex = index;
                 });
               },
-              children: const <Widget>[],
+              children: const <Widget>[
+                ProductDisplayScreen(),
+                CategoryDisplayScreen(),
+              ],
             ),
           ],
         ),
