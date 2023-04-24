@@ -7,3 +7,9 @@ final TextStyle kTitleStyle = GoogleFonts.ubuntu(
   letterSpacing: 1.5,
   color: Colors.white,
 );
+
+final TextStyle kNormalStyle = GoogleFonts.ubuntu(
+  fontSize: 15,
+  fontWeight: FontWeight.w600,
+  color: Colors.black,
+);
