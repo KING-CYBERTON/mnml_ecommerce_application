@@ -55,12 +55,27 @@ class IntroScreen extends StatelessWidget {
                 ),
               ),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
                     'Your Appearance\nShows Your Quality',
                     textAlign: TextAlign.center,
-                    style: kTitleStyle,
+                    style: kNormalStyle.copyWith(
+                      fontSize: 30,
+                      height: 1.3,
+                    ),
                   ),
+                  const SizedBox(height: 30),
+                  Text(
+                    'Change The Quality Of Your\nAppearance with MNMLMANDI',
+                    textAlign: TextAlign.center,
+                    style: kNormalStyle.copyWith(
+                      height: 1.5,
+                      color: Colors.grey,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                  const SizedBox(height: 30),
                 ],
               ),
             ),
