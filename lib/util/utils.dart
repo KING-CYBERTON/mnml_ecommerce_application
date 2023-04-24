@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mnml_ecommerce_application/util/colors.dart';
 
 final TextStyle kTitleStyle = GoogleFonts.ubuntu(
   fontSize: 28,
@@ -29,8 +30,14 @@ List<Widget> buildIndicators() {
 
 Widget indicator(bool isActive) {
   return AnimatedContainer(
-    duration: const Duration(
-      milliseconds: 150,
+    margin: const EdgeInsets.symmetric(horizontal: 6.0),
+    duration: const Duration(milliseconds: 150),
+    height: 10.0,
+    width: isActive ? 30.0 : 10.0,
+    decoration: BoxDecoration(
+      color: isActive ? kOrangeColor : Colors.grey,
+      shape: !isActive ? BoxShape.circle : BoxShape.rectangle,
+      borderRadius: isActive ? BorderRadius.circular(20) : null,
     ),
   );
 }
