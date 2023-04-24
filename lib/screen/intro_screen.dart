@@ -76,6 +76,9 @@ class IntroScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 30),
+                  Row(
+                    children: buildIndicators(),
+                  ),
                 ],
               ),
             ),
