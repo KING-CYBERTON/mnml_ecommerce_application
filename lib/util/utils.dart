@@ -13,3 +13,24 @@ final TextStyle kNormalStyle = GoogleFonts.ubuntu(
   fontWeight: FontWeight.w600,
   color: Colors.black,
 );
+
+// building indicators
+List<Widget> buildIndicators() {
+  List<Widget> list = [];
+
+  for (var i = 0; i < 4; i++) {
+    list.add(
+      i == 1 ? indicator(true) : indicator(false),
+    );
+  }
+
+  return list;
+}
+
+Widget indicator(bool isActive) {
+  return AnimatedContainer(
+    duration: const Duration(
+      milliseconds: 150,
+    ),
+  );
+}
